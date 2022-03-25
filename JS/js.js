@@ -6,11 +6,11 @@ var resume_button   =$('#resume-button');
 var game_button   =$('#game-button');
 var engine_button   =$('#engine-button');
 
-var home_dir="home.html";
-var about_dir="about.html";
-var engine_dir="engine.html";
-var game_dir="game.html";
-var contact_dir="contact.html";
+var home_dir="https://SudharsanZen.github.io/home.html";
+var about_dir="https://SudharsanZen.github.io/about.html";
+var engine_dir="https://SudharsanZen.github.io/engine.html";
+var game_dir="https://SudharsanZen.github.io/game.html";
+var contact_dir="https://SudharsanZen.github.io/contact.html";
 
 var project_text=$('#projectText');
 var project_links=$('.ProjectsTypes')
