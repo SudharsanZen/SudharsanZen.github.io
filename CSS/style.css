@@ -45,21 +45,13 @@ header
   color:var(--color-white);
   overflow:hidden;
 }
-section
-{
-  min-height:100vh;
-  width:100%;
-  position:absolute;
-  left: 0;
-  top:0;
-  padding:3rem 18rem;
-}
+
 
 
 
 .controlls{
 
-  overflow: hidden;
+  //overflow: hidden;
   z-index: 10;
   height: 100vh;
   width: 300px;
@@ -139,7 +131,8 @@ margin-left: 10px;
   font-size: 14px;
   border-radius: 5px;
   padding: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out,width 0s;
+
   background-color: var(--color-secondary);
 
 
@@ -200,4 +193,25 @@ a.project_link_list::before
   transform:translateX(300px);
   order:2;
 
+}
+
+.Home
+{
+  display:block;
+}
+.About
+{
+  display:none;
+}
+.Engine
+{
+  display:none;
+}
+.Game
+{
+  display:none;
+}
+.Contact
+{
+  display: none;
 }

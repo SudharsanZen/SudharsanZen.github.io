@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Portfolio</title>
+<head>
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://SudharsanZen.github.io/CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
+  <title>Portfolio</title>
+  <!--https://SudharsanZen.github.io/-->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
 
-
-<div class="main-content">
-
+<body>
+  <div class="main-content">
     <div class="controlls">
       <p class="Title">
-
       </p>
-        <div class="control control-hover control-1 active-btn" data-id="header">
-
-            <div class="roundIcons">
-              <span class="fas fa-home"></span>
-            </div>
-            <div style="display:block;">
-              <b class="controlText">Home</b>
-            </div>
-
+      <div class="control control-hover control-1 active-btn" id="home-button">
+        <div class="roundIcons">
+          <span class="fas fa-home"></span>
         </div>
-        <div class="control control-hover control-2" data-id="about">
-            <div class="roundIcons">
-              <span class="fas fa-user"></span>
-            </div>
-            <div style="display:block;">
-              <b class="controlText">About</b>
-            </div>
+        <div style="display:block;">
+          <b class="controlText">Home</b>
         </div>
-
-        <!--PROJECT BOTTON CONTROLLER PART-->
-        <div class="control  control-hover control-3" id="projects">
-          <span style="display:flex; flex-direction:row;justify-content:center;">
-              <div class="roundIcons">
-                <span class="fas fa-briefcase"></span>
-              </div>
-            <div class="project_div" style="display:flex;flex-direction:column;">
-              <div style="display:block;">
-                <b class="controlText" id="projectText">Projects</b>
-              </div>
-
-              <div class="ProjectsTypes">
-                <ul>
-
-                  <li class="project_type_list"><a class="project_link_list project_links" href="https://www.google.com">Engine Dev</a></li>
-                  <li class="project_type_list"><a class="project_link_list project_links" href="https://www.google.com">Graphics Programming</a></li>
-                  <li class="project_type_list"><a class="project_link_list project_links" href="https://www.google.com">Misc</a></li>
-                </ul>
-                </ul>
-              </div>
-          </div>
-          </span>
+      </div>
+      <div class="control control-hover control-2" id="about-button">
+        <div class="roundIcons">
+          <span class="fas fa-user"></span>
         </div>
-        <!--end of project botton controller part-->
-        <div class="control  control-hover control-4" data-id="resume">
+        <div style="display:block;">
+          <b class="controlText">About</b>
+        </div>
+      </div>
+      <!--PROJECT BOTTON CONTROLLER PART-->
+      <div class="control  control-hover control-3" id="projects-button">
+        <span style="display:flex; flex-direction:row;justify-content:center;">
           <div class="roundIcons">
-            <span class="fa-solid fa-file-lines"></span>
+            <span class="fas fa-briefcase"></span>
           </div>
-          <div style="display:block;">
-            <b class="controlText">Resume</b>
-          </div>
-        </div>
-        <div class="control  control-hover control-5" data-id="contact">
-            <div class="roundIcons">
-              <span class="fa-solid fa-address-card"></span>
-            </div>
+          <div class="project_div" style="display:flex;flex-direction:column;">
             <div style="display:block;">
-              <b class="controlText">Contact</b>
+              <b class="controlText" id="projectText">Projects</b>
             </div>
-        </div>
-
-        <div style="position:absolute;bottom:1vh;display:flex;flex-direction:column;align-items:center;">
-
-          <hr style="opacity:1;width:400px;margin:1px;border:1px solid var(--color-primary);">
-          <div style="display:flex;flex-direction:row; align-items: center; justify-content: center; text-align: center;margin:10px">
-            <a href="https://www.linkedin.com/in/sudharsan-yuvaraj-2a2167190/" class=" platform_icon fa-brands fa-linkedin" style="font-size:35px;"></a>
-            <a href="https://github.com/SudharsanZen" class="fa-brands fa-github-square platform_icon" style="font-size:35px;"></a>
-            <a href="https://www.youtube.com/channel/UCaKav0cMu-KH3slylWL1Mdw" class="fa-brands fa-youtube-square platform_icon" style="font-size:35px;"></a>
-            <div class="art_station_icon platform_icon">
-              <a href="https://www.artstation.com/sudharsanyuvaraj" class="fa-brands fa-artstation" style="font-size:20px;"></a>
+            <div class="ProjectsTypes">
+              <ul>
+                <li class="project_type_list"><a class="project_link_list project_links" id="engine-button" >Engine and Graphics Programming</a></li>
+                <!--<li class="project_type_list"><a class="project_link_list project_links" href="https://www.google.com">Graphics Programming</a></li>-->
+                <li class="project_type_list"><a class="project_link_list project_links" id="game-button" >Game Development stuff</a></li>
+              </ul>
+              </ul>
             </div>
           </div>
-          <hr style="opacity:1;width:400px;margin:5px;border:1px solid var(--color-primary);">
+        </span>
+      </div>
+      <!--end of project botton controller part-->
+      <div class="control  control-hover control-4" id="resume-button">
+        <div class="roundIcons">
+          <span class="fa-solid fa-file-lines"></span>
         </div>
+        <div style="display:block;">
+          <b class="controlText">Resume</b>
+        </div>
+      </div>
+      <div class="control  control-hover control-5" id="contact-button">
+        <div class="roundIcons">
+          <span class="fa-solid fa-address-card"></span>
+        </div>
+        <div style="display:block;">
+          <b class="controlText">Contact</b>
+        </div>
+      </div>
+
+      <div style="position:absolute;bottom:1vh;display:flex;flex-direction:column;align-items:center;">
+        <hr style="opacity:1;width:400px;margin:1px;border:1px solid var(--color-primary);">
+        <div style="display:flex;flex-direction:row; align-items: center; justify-content: center; text-align: center;margin:10px">
+          <a href="https://www.linkedin.com/in/sudharsan-yuvaraj-2a2167190/" class=" platform_icon fa-brands fa-linkedin" style="font-size:35px;"></a>
+          <a href="https://github.com/SudharsanZen" class="fa-brands fa-github-square platform_icon" style="font-size:35px;"></a>
+          <a href="https://www.youtube.com/channel/UCaKav0cMu-KH3slylWL1Mdw" class="fa-brands fa-youtube-square platform_icon" style="font-size:35px;"></a>
+          <div class="art_station_icon platform_icon">
+            <a href="https://www.artstation.com/sudharsanyuvaraj" class="fa-brands fa-artstation" style="font-size:20px;"></a>
+          </div>
+        </div>
+        <hr style="opacity:1;width:400px;margin:5px;border:1px solid var(--color-primary);">
+      </div>
     </div>
 
     <div class="content-page">
-        <h1>Home</h1>
+      <section class="Home">
+        
+      </section>
+      <section class="About">
+        <h1>About</h1>
         <hr style="margin:5px 0 5px 0; width:100%;">
         <p>
           Hi there, I am sudharsan!
         </p>
+      </section>
+      <section class="Engine">
+        <h1>EngineDev</h1>
+        <hr style="margin:5px 0 5px 0; width:100%;">
+        <p>
+          Hi there, I am sudharsan!
+        </p>
+      </section>
+      <section class="Game">
+        <h1>Game Development</h1>
+        <hr style="margin:5px 0 5px 0; width:100%;">
+        <p>
+          Hi there, I am sudharsan!
+        </p>
+      </section>
+      <section class="Contact">
+        <h1>Contact Details</h1>
+        <hr style="margin:5px 0 5px 0; width:100%;">
+        <p>
+          Hi there, I am sudharsan!
+        </p>
+      </section>
     </div>
-</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://SudharsanZen.github.io/JS/js.js"></script>
-  </body>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="JS/js.js"></script>
+</body>
+
 </html>
