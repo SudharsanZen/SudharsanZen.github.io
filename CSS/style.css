@@ -84,7 +84,7 @@ section
   height:54px;
   border-radius:var(--button-radius);
   display:flex;
-
+  flex-direction: row;
   color: var(--color-white);
   align-items: center;
   transition: all 0.2s;
