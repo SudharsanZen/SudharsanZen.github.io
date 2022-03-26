@@ -43,7 +43,7 @@ function ShowSection(event)
 
 
 deactivate_section()
-  if(event.currentTarget.id.localeCompare("engine-section-link"))
+  if(event.currentTarget.id.localeCompare("engine-section-link")==0)
     curr_active_section="engine-button";
   else
     curr_active_section=event.currentTarget.id;
