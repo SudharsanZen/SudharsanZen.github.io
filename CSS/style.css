@@ -216,14 +216,14 @@ a.project_link_list::before
   display: none;
 }
 
-link
+.link
 {
   text-decoration: underline;
   color:blue;
 
 }
 
-link:hover
+.link:hover
 {
   text-decoration:underline;
   color:darkblue;
