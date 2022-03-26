@@ -6,24 +6,26 @@ var resume_button   =$('#resume-button');
 var game_button   =$('#game-button');
 var engine_button   =$('#engine-button');
 
-var home_dir="https://SudharsanZen.github.io/home.html";
-var about_dir="https://SudharsanZen.github.io/about.html";
-var engine_dir="https://SudharsanZen.github.io/engine.html";
-var game_dir="https://SudharsanZen.github.io/game.html";
-var contact_dir="https://SudharsanZen.github.io/contact.html";
+var base="http://localhost:8080/";
+//var base="https://SudharsanZen.github.io/";
+var home_dir=base+"home.html";
+var about_dir=base+"about.html";
+var engine_dir=base+"engine.html";
+var game_dir=base+"game.html";
+var contact_dir=base+"contact.html";
 
 var project_text=$('#projectText');
 var project_links=$('.ProjectsTypes')
 
 var home    =   $('.Home');      home.load(home_dir);
-var about   =   $('.About');     about.load(about_dir);
+var about   =   $('.About');
 var engine  =   $('.Engine');    engine.load(engine_dir);
 var game    =   $('.Game');      game.load(game_dir);
 var contact =   $('.Contact');   contact.load(contact_dir);
 
 var section_list={"home-button":home,"about-button":about,"engine-button":engine,"game-button":game,"contact-button":contact};
 var button_list=[home_button,about_button,engine_button,game_button,contact_button];
-var curr_active_section="home-button";
+var curr_active_section="about-button";
 function deactivate_section()
 {
   //console.log("from:"+curr_active_section);
@@ -38,9 +40,10 @@ function activate_section()
   section_list[curr_active_section].css("width","inherit");
   section_list[curr_active_section].css("height","inherit");
 }
+activate_section();
 function ShowSection(event)
 {
-
+console.log("clicked");
 
 deactivate_section()
   if(event.currentTarget.id.localeCompare("engine-section-link")==0)
@@ -54,6 +57,16 @@ activate_section()
 var i;
 for(i=0;i<button_list.length;i++)
   button_list[i].click(ShowSection);
+about.load(about_dir,
+  function()
+  {
+    var engine_section_list=$("#engine-section-link");
+    console.log(engine_section_list);
+    engine_section_list.click(ShowSection);
+  }
+);
+
+
 var home_button=$(".control-1");
 projects_button.hover(function()
 {

@@ -53,6 +53,7 @@ header
 
   //overflow: hidden;
   z-index: 10;
+  float:left;
   height: 100vh;
   width: 300px;
   background-color: var(--color-red);
@@ -189,19 +190,22 @@ a.project_link_list::before
 .content-page
 {
   padding: 100px;
-  width:auto;
-  transform:translateX(300px);
+  margin-left: 300px;
+  margin-right: 100px;
+  float:right;
   order:2;
 
 }
 
 .Home
 {
-  display:block;
+  display:none;
 }
 .About
 {
   display:none;
+
+
 }
 .Engine
 {
@@ -219,12 +223,16 @@ a.project_link_list::before
 .link
 {
   text-decoration: underline;
-  color:blue;
-
+  color:var(--color-secondary);
+  cursor:pointer;
 }
 
 .link:hover
 {
   text-decoration:underline;
-  color:darkblue;
+  color:var(--color-orange);
+}
+#clearingdiv
+{
+  clear: both;
 }
