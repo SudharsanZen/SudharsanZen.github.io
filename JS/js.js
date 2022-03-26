@@ -6,8 +6,8 @@ var resume_button   =$('#resume-button');
 var game_button   =$('#game-button');
 var engine_button   =$('#engine-button');
 
-var base="http://localhost:8080/";
-//var base="https://SudharsanZen.github.io/";
+//var base="http://localhost:8080/";
+var base="https://SudharsanZen.github.io/";
 var home_dir=base+"home.html";
 var about_dir=base+"about.html";
 var engine_dir=base+"engine.html";
