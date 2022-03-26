@@ -24,19 +24,31 @@ var contact =   $('.Contact');   contact.load(contact_dir);
 var section_list={"home-button":home,"about-button":about,"engine-button":engine,"game-button":game,"contact-button":contact};
 var button_list=[home_button,about_button,engine_button,game_button,contact_button];
 var curr_active_section="home-button";
+function deactivate_section()
+{
+  //console.log("from:"+curr_active_section);
+  section_list[curr_active_section].css("display","none");
+  section_list[curr_active_section].css("width","0");
+  section_list[curr_active_section].css("height","0");
+}
+function activate_section()
+{
+  //console.log("to:"+curr_active_section);
+  section_list[curr_active_section].css("display","block");
+  section_list[curr_active_section].css("width","inherit");
+  section_list[curr_active_section].css("height","inherit");
+}
 function ShowSection(event)
 {
 
-//console.log("from:"+curr_active_section);
-section_list[curr_active_section].css("display","none");
-section_list[curr_active_section].css("width","0");
-section_list[curr_active_section].css("height","0");
 
-curr_active_section=event.currentTarget.id;
-//console.log("to:"+curr_active_section);
-section_list[curr_active_section].css("display","block");
-section_list[curr_active_section].css("width","inherit");
-section_list[curr_active_section].css("height","inherit");
+deactivate_section()
+  if(event.currentTarget.id.localeCompare("engine-section-link"))
+    curr_active_section="engine-button";
+  else
+    curr_active_section=event.currentTarget.id;
+
+activate_section()
 
 }
 var i;

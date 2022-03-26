@@ -215,3 +215,16 @@ a.project_link_list::before
 {
   display: none;
 }
+
+link
+{
+  text-decoration: underline;
+  color:blue;
+
+}
+
+link:hover
+{
+  text-decoration:underline;
+  color:darkblue;
+}
