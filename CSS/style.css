@@ -22,7 +22,7 @@ body
   background-color: var(--color-primary);
   color:var(--color-white);
   font-size: 1.1rem;
-  font-family: 'M PLUS 1', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   transition: all 1s ease-in-out;
   height:100%;
 }
