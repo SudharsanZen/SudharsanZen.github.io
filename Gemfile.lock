@@ -70,11 +70,12 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
+  http_parser.rb (~> 0.6.0)
   jekyll-paginate-v2 (~> 2.0)
   kramdown-parser-gfm
   phantom!
   rake (~> 12.3)
-  webrick (~> 1.7)
+  webrick
 
 BUNDLED WITH
    2.3.11
