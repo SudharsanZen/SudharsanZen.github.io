@@ -76,7 +76,7 @@ DEPENDENCIES
   phantom!
   rake (~> 12.3)
   wdm (>= 0.1.0)
-  webrick
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.3.11

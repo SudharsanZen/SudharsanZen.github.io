@@ -90,17 +90,7 @@ pagination:
   indexpage: 'index'
 
 ############################################################
-autopages:
-    enabled: true
-    categories:
-      layouts:
-        - default.html
-      title: :cat Events
-      permalink: /category/:cat
-    collections:
-      enabled: false
-    tags:
-      enabled: false
+
 ### Phantom settings
 footer_text: '© 2022 Sudharsan'
 admin_name: 'Sudharsan'
