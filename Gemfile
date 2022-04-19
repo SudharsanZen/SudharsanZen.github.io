@@ -3,6 +3,5 @@
 source "https://rubygems.org"
 gem "kramdown-parser-gfm"
 gem "webrick"
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-gem "webrick" 
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gemspec
