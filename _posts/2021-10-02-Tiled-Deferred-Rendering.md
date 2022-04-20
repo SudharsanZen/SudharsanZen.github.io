@@ -9,5 +9,6 @@ featured_video: 'https://www.youtube.com/embed/UIVkuDuI8bI'
 project_link: 'https://github.com/jamigibbs/bloc-jams-angular'
 button_icon: 'youtube'
 button_text: 'YouTube-Demo'
+project_blog: ""
 lead_text: 'A Tiled Deferred Renderer that was written in OpenGL with Compute Shader.'
 ---

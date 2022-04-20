@@ -10,6 +10,13 @@
     </button>
   </a>
   {% endif %}
+  {% if post.project_blog != empty %}
+  <a href="{{ post.project_blog}}" class="project-link">
+    <button class="btn btn-default btn-lg">
+      Read More  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    </button>
+  </a>
+  {% endif %}
 
   {% if post.tags != empty %}
   <div class="tags">
