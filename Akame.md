@@ -25,7 +25,7 @@ if you are interested in taking a look at it you can find it in the Akame's repo
 
 ## Akame-core
 Akame-core is the Graphics Framework part, it's designed to be simple to use but also to be flexible and easily extendable. Enough said, here's a sample code to create a sphere and a directional light using my engine:
-<details>
+<details markdown="1">
   <summary style='cursor: pointer;'>show me a small tutorial on working with your framework!</summary>
 {% highlight c++ %}
 /*before you do anything, don't forget to set the relative location (relative to your working directory) of the assets folder that contains all the shaders, engine assets and your assets as shown below*/
@@ -198,7 +198,7 @@ int main()
 ## Creating custom Materials, Shaders and Rendering pipeline:
 In Akame, it's very possible to write your own shader, material and a rendering pipeline to handle all the renderable entities that use a particular shader/material.
 To register a new Shader with Akame, find the [_ShaderConf.XML_](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML) file in the Assets folder of Akame and add details describing your shaders.
-<details>
+<details markdown="1">
   <summary style='cursor: pointer;'>show me the examples!</summary>
 _**Example:**_
 let's say you have a fragment shader named "frag.frag" and a vertex shader named "vert.vert" that's in the [same folder](https://github.com/SudharsanZen/Akame/tree/main/Assets/Shaders) as the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML) file.

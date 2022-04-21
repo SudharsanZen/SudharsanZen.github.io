@@ -12,7 +12,7 @@ permalink: /TDR/
 First I render all the Geometry to a G-Buffer using these two vertex and fragment shader:
 
 #### **Vertex Shader:**
-<details>
+<details markdown="1">
   <summary style='cursor: pointer;'>show me the code!</summary>
 {%highlight c++%}
 #version 430 core
@@ -58,7 +58,7 @@ void main()
 
 </details>
 #### **Fragment Shader:**
-<details>
+<details markdown="1">
   <summary style='cursor: pointer;'>show me the code!</summary>
 {%highlight c++%}
 #version 430 core
@@ -148,8 +148,8 @@ So for the culling and rendering part this is what I basically did:
 
   1. Then for each pixel, go through the light-list array and calculate the final pixel value and store it in the output-buffer/texture.
 
-  <details>
-    <summary style='cursor: pointer;'>show me the code!</summary>
+<details markdown="1">
+  <summary style='cursor: pointer;'>show me the code!</summary>
 The comments explain most of what is happening in the code:
 {%highlight c++%}
 void main()
