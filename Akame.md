@@ -25,6 +25,8 @@ if you are interested in taking a look at it you can find it in the Akame's repo
 
 ## Akame-core
 Akame-core is the Graphics Framework part, it's designed to be simple to use but also to be flexible and easily extendable. Enough said, here's a sample code to create a sphere and a directional light using my engine:
+<details>
+  <summary style='cursor: pointer;'>show me a small tutorial on working with your framework!</summary>
 {% highlight c++ %}
 /*before you do anything, don't forget to set the relative location (relative to your working directory) of the assets folder that contains all the shaders, engine assets and your assets as shown below*/
 AssetManager::setAssetRoot("../../../../Assets/");
@@ -185,7 +187,7 @@ int main()
 }
 
 {%endhighlight %}
-
+</details>
 **results:**
 <img class="img-responsive" src="/img/posts/sphere_dir.png" title="output">
 *Note*: if you've copy pasted the code and ran it and endded up with a black screen it's probably because the camera is inside the large sphere we've created XD, so move the camera out with WASD keys and your mouse.
@@ -196,7 +198,8 @@ int main()
 ## Creating custom Materials, Shaders and Rendering pipeline:
 In Akame, it's very possible to write your own shader, material and a rendering pipeline to handle all the renderable entities that use a particular shader/material.
 To register a new Shader with Akame, find the [_ShaderConf.XML_](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML) file in the Assets folder of Akame and add details describing your shaders.
-
+<details>
+  <summary style='cursor: pointer;'>show me the examples!</summary>
 _**Example:**_
 let's say you have a fragment shader named "frag.frag" and a vertex shader named "vert.vert" that's in the [same folder](https://github.com/SudharsanZen/Akame/tree/main/Assets/Shaders) as the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML) file.
 Then to register the shader under the name "MyNewShader", you add this to the ShaderConf.XML:
@@ -268,7 +271,7 @@ public:
 ShaderManager::AttachShaderPipeline<MyNewRenderPipeline>("MyNewShader");
 
 {%endhighlight%}
-
+</details>
 
 ## Physics System
   The engine uses [NVIDIA-PhysX](https://github.com/NVIDIAGameWorks/PhysX) as it's physics engine.
@@ -280,7 +283,7 @@ ShaderManager::AttachShaderPipeline<MyNewRenderPipeline>("MyNewShader");
 ## C++ Scripting System
   The Akame-Engine provides a C++ Scripting+Behviour system for creating off-the-shelf components and modifying the framework's normal function.
   It's C++ Scripting+Behaviour system allows you to create VS-Projects, Compile and run code written in C++ at runtime. It basically exposes the whole Framework's API and you can do everything the framework does from within the C++ 'Scripts' (basically compiling and hot-loading DLLs at runtime).
-  It also provides support for Reflection in C++ which allows Serailization and Showing member variables in the Inspector pannel's UI for a better manual debugging and testing experience!
+  It also provides support for **Reflection in C++** which allows **Serailization** and **Showing member variables in the Inspector pannel's UI** for a better manual debugging and testing experience!
 
   **UI example:**
 

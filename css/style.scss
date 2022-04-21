@@ -432,3 +432,25 @@ pre {
     .highlight .vg { color: #000000 } /* Name.Variable.Global */
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+
+details > summary::before {
+content: "\f0da";
+font-weight: 900;
+font-family: 'Font Awesome 5 Free';
+}
+
+details[open] > summary::before {
+    content: "\f0d7";
+    font-family: 'Font Awesome 5 Free';
+}
+
+details {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
