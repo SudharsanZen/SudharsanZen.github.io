@@ -11,5 +11,5 @@ button_icon: 'youtube'
 button_text: 'YouTube'
 project_blog: ""
 git_link: "https://github.com/SudharsanZen/BasicThirdPersonShooter"
-lead_text: 'This is a Unity3D Tutorial that I made for making a basic third-person shooter controller'
+lead_text: 'This is a Unity3D Tutorial that I made for making a basic third-person shooter controller.'
 ---

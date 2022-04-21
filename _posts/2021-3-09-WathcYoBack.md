@@ -11,5 +11,5 @@ itch_link: 'https://redeye6699.itch.io/watch-yo-back'
 button_icon: 'youtube'
 button_text: 'YouTube-Demo'
 project_blog: ""
-lead_text: "This is a game that I made for a 2020 GameJam. The music and all the audio work was done by my only other team-mate from Nederland! you can find his sound-cloud link <a class='link-class' href='https://soundcloud.com/spooked_to_death'>here</a>"  
+lead_text: "This is a game that I made for a 2020 GameJam. The music and all the audio work was done by my only other team-mate from Nederland! you can find his sound-cloud link <a class='link-class' href='https://soundcloud.com/spooked_to_death'>here</a>."  
 ---
