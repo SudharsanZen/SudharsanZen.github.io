@@ -2,11 +2,11 @@
 layout: inner
 position: right
 title: 'Tiled Deferred Rendering'
-date: 2021-10-02 14:15:00
+date: 2022-4-02 14:15:00
 categories: development
 tags: C++ C OpenGL Akame-Framework Visual-Studio
-featured_video: 'https://www.youtube.com/embed/UIVkuDuI8bI'
-project_link: 'https://github.com/jamigibbs/bloc-jams-angular'
+featured_video: 'https://www.youtube.com/embed/CmAil1rzkHs'
+project_link: 'https://www.youtube.com/watch?v=CmAil1rzkHs'
 button_icon: 'youtube'
 button_text: 'YouTube-Demo'
 project_blog: "/TDR/"

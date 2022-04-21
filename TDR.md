@@ -7,6 +7,7 @@ permalink: /TDR/
 
 
 <iframe width="100%" height="412px" src="https://www.youtube.com/embed/CmAil1rzkHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="412px" src="https://www.youtube.com/embed/UIVkuDuI8bI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### **Here's a short summary of my implementation:**
 
 First I render all the Geometry to a G-Buffer using these two vertex and fragment shader:
@@ -130,7 +131,7 @@ After rendering everything to the G-Buffers, I then collect information of each 
 
 #### **Compute Shader:**
 
-you can find the full compute shader [here](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/Deferred/Compute/defCal.comp).
+you can find the full compute shader [here](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/Deferred/Compute/defCal.comp){:class='link-class'}.
 
 So for the culling and rendering part this is what I basically did:
 

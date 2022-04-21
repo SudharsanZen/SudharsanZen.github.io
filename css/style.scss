@@ -454,3 +454,15 @@ details {
 details[open] > summary {
     margin-bottom: 0.5rem;
 }
+.link-class::after
+{
+  content: "\f08e";
+  font-weight: 900;
+  font-size: 10px;
+  vertical-align: super;
+  font-family: 'Font Awesome 5 Free';
+}
+.link-class
+{
+    font-style: italic;
+}

@@ -17,6 +17,20 @@
     </button>
   </a>
   {% endif %}
+  {% if post.itch_link%}
+  <a href="{{ post.itch_link}}" class="project-link">
+    <button class="btn btn-default btn-lg">
+      <i class="fa-brands fa-itch-io"></i>itch.io
+    </button>
+  </a>
+  {% endif %}
+  {% if post.git_link%}
+  <a href="{{ post.itch_link}}" class="project-link">
+    <button class="btn btn-default btn-lg">
+    <i class="fa-brands fa-github"></i>GitHub
+    </button>
+  </a>
+  {% endif %}
 
   {% if post.tags != empty %}
   <div class="tags">

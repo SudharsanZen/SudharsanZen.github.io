@@ -21,7 +21,7 @@ Here are the stuff the framework and engine currently offers:
 ## Akame ECS
 
 The custom made Entity Component System (ECS) is the core component of both the framework and you guessed it, the engine! It's designed to be very fast and easy to use.
-if you are interested in taking a look at it you can find it in the Akame's repo [here](https://github.com/SudharsanZen/Akame/tree/main/ECS), it's a header only ECS implementation written leveraging the power of templates.
+if you are interested in taking a look at it you can find it in the Akame's repo [here](https://github.com/SudharsanZen/Akame/tree/main/ECS){:class='link-class'}, it's a header only ECS implementation written leveraging the power of templates.
 
 ## Akame-core
 Akame-core is the Graphics Framework part, it's designed to be simple to use but also to be flexible and easily extendable. Enough said, here's a sample code to create a sphere and a directional light using my engine:
@@ -67,7 +67,7 @@ and now we are ready to create 'Entities' (directional light and sphere)
 
 **Now here come's the part of creating a mesh (Sphere).
 for an Entity to become a renderable mesh, we need to add three components to it:**
-  * **Material**  : This component is an interface to select the desired Shaders registered in the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML)and set material-properties\Shader-Uniforms to be used.
+  * **Material**  : This component is an interface to select the desired Shaders registered in the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML){:class='link-class'} and set material-properties\Shader-Uniforms to be used.
   * **Transform** : This component is used to describe and modify the position and orientation of an Entity.
   * **Mesh**      : This component is used to transfer mesh/vertex data to the rendering System.
 
@@ -197,11 +197,11 @@ int main()
 
 ## Creating custom Materials, Shaders and Rendering pipeline:
 In Akame, it's very possible to write your own shader, material and a rendering pipeline to handle all the renderable entities that use a particular shader/material.
-To register a new Shader with Akame, find the [_ShaderConf.XML_](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML) file in the Assets folder of Akame and add details describing your shaders.
+To register a new Shader with Akame, find the [_ShaderConf.XML_](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML){:class='link-class'} file in the Assets folder of Akame and add details describing your shaders.
 <details markdown="1">
   <summary style='cursor: pointer;'>show me the examples!</summary>
 _**Example:**_
-let's say you have a fragment shader named "frag.frag" and a vertex shader named "vert.vert" that's in the [same folder](https://github.com/SudharsanZen/Akame/tree/main/Assets/Shaders) as the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML) file.
+let's say you have a fragment shader named "frag.frag" and a vertex shader named "vert.vert" that's in the [same folder](https://github.com/SudharsanZen/Akame/tree/main/Assets/Shaders){:class='link-class'} as the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML){:class='link-class'} file.
 Then to register the shader under the name "MyNewShader", you add this to the ShaderConf.XML:
 {%highlight XML%}
 <Shader name="MyNewShader" queue="NULL">
@@ -221,7 +221,7 @@ The Material component takes in the name of the shader as a string argument. So,
 {%endhighlight%}
 
 **Creating a new shader/render pipeline for our new shader:**
-if you feel like you need more control than what the Material Interface offers, you can go for a yourown shader/render pipeline. To do that, from within the framework you need to inherit from the ['ShaderRenderPipeline'](https://github.com/SudharsanZen/Akame/blob/main/AkameCore/Header%20Files/Rendering/System/ShaderRenderPipeline.h) class.
+if you feel like you need more control than what the Material Interface offers, you can go for a yourown shader/render pipeline. To do that, from within the framework you need to inherit from the ['ShaderRenderPipeline'](https://github.com/SudharsanZen/Akame/blob/main/AkameCore/Header%20Files/Rendering/System/ShaderRenderPipeline.h){:class='link-class'} class.
 
 {%highlight c++%}
 /*This class is a base class that provides the
@@ -274,9 +274,9 @@ ShaderManager::AttachShaderPipeline<MyNewRenderPipeline>("MyNewShader");
 </details>
 
 ## Physics System
-  The engine uses [NVIDIA-PhysX](https://github.com/NVIDIAGameWorks/PhysX) as it's physics engine.
+  The engine uses [NVIDIA-PhysX](https://github.com/NVIDIAGameWorks/PhysX){:class='link-class'} as it's physics engine.
   The engine provides an abstracted and easy to use Interface to the PhysX engine via the 'RigidBody3D' component.
-  Here's a [sample-code](https://github.com/SudharsanZen/Akame/tree/main/Samples/Test) utilizing this component.
+  Here's a [sample-code](https://github.com/SudharsanZen/Akame/tree/main/Samples/Test){:class='link-class'} utilizing this component.
   And here's it's Visual demo:
   <iframe width="100%" height="412" src="https://www.youtube.com/embed/PHQd2YKL90E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
