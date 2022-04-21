@@ -65,11 +65,11 @@ and now we are ready to create 'Entities' (directional light and sphere)
 
 **Now here come's the part of creating a mesh (Sphere).
 for an Entity to become a renderable mesh, we need to add three components to it:**
-  * **Material** : this component is an interface to select Shaders and set properties of the Shader to be used.
-  * **Transform**: this component is used to describe and modify the position and orientation of an Entity.
-  * **Mesh**     : this component is used to transfer mesh/vertex data to the rendering System.
+  * **Material**  : This component is an interface to select the desired Shaders registered in the [ShaderConf.XML](https://github.com/SudharsanZen/Akame/blob/main/Assets/Shaders/ShaderConf.XML)and set material-properties\Shader-Uniforms to be used.
+  * **Transform** : This component is used to describe and modify the position and orientation of an Entity.
+  * **Mesh**      : This component is used to transfer mesh/vertex data to the rendering System.
 
-**step1:**creating the entity:
+**step1:** creating the entity:
 {% highlight c++ %}
   Entity sphere = scene.CreateEntity();
 {% endhighlight %}
@@ -89,14 +89,14 @@ for an Entity to become a renderable mesh, we need to add three components to it
 
 {% endhighlight %}
 
-**step3:**Add transform, mesh and material component to the entity
+**step3:** Add transform, mesh and material component to the entity
 {% highlight c++ %}
   Mesh& sphere_mesh = scene.AddComponent<Mesh>(sphere);
   Transform& sphere_t = scene.AddComponent<Transform>(sphere);
   scene.AddComponent<Material>(sphere) = rust1;
 {% endhighlight %}
 
-**step4:**set Mesh data and transform parameters:
+**step4:** set Mesh data and transform parameters:
 
 {% highlight c++ %}
 sphere_t.SetGlobalScale(glm::vec3(2.0f));
