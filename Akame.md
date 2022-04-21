@@ -318,3 +318,8 @@ ShaderManager::AttachShaderPipeline<MyNewRenderPipeline>("MyNewShader");
   if you select the entity in the scene hierarchy to which the scriptable component (with behaviour shown above) has been attached to inside the Engine, you will see this UI in the inspector panel:
 
   <img src="/img/posts/inspector-scriptable.png" title="output" style="max-height:412px;max-width:412px;">
+
+<br>
+<br>
+  **Also, If you are interested, feel free to checkout the play list with all the video-logs of my engine update that I put on YouTube!**
+  <iframe width="100%" height="312px" src="https://www.youtube.com/embed/videoseries?list=PL7kD7ACAKlr9gos6Z2iEE2SDh2HoYlQqB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
