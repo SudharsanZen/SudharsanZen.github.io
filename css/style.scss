@@ -466,3 +466,10 @@ details[open] > summary {
 {
     font-style: italic;
 }
+.table-style
+{
+  th,td{
+vertical-align: top;
+  padding-right: 50px;
+}
+}
