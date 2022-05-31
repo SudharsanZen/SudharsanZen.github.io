@@ -8,7 +8,7 @@ permalink: /Akame/
 **what is akame?**
 
 Akame is both a framework (Akame-Core) and a game engine(Akame-Engine) for building interactive applications.
-so to put it straight, these are the things you can do:
+So to put it straight, these are the things you can do:
 
   * Use Akame-Core and ignore the Engine.
   * Use Akame-Core and Use the Engine as an IDE for editing the scene.
@@ -282,7 +282,7 @@ ShaderManager::AttachShaderPipeline<MyNewRenderPipeline>("MyNewShader");
 
 ## C++ Scripting System
   The Akame-Engine provides a C++ Scripting+Behviour system for creating off-the-shelf components and modifying the framework's normal function.
-  It's C++ Scripting+Behaviour system allows you to create VS-Projects, Compile and run code written in C++ at runtime. It basically exposes the whole Framework's API and you can do everything the framework does from within the C++ 'Scripts' (basically compiling and hot-loading DLLs at runtime).
+  Its C++ Scripting+Behaviour system allows you to create VS-Projects, Compile and run code written in C++ at runtime. It basically exposes the whole Framework's API and you can do everything the framework does from within the C++ 'Scripts' (basically compiling and hot-loading DLLs at runtime).
   It also provides support for **Reflection in C++** which allows **Serailization** and **Showing member variables in the Inspector pannel's UI** for a better manual debugging and testing experience!
 
   **UI example:**
@@ -313,13 +313,13 @@ ShaderManager::AttachShaderPipeline<MyNewRenderPipeline>("MyNewShader");
   {%endhighlight%}
 
 
-  **result**
+  **Result**
 
-  if you select the entity in the scene hierarchy to which the scriptable component (with behaviour shown above) has been attached to inside the Engine, you will see this UI in the inspector panel:
+  If you select the entity in the scene hierarchy to which the scriptable component (with behaviour shown above) has been attached to inside the Engine, you will see this UI in the inspector panel:
 
   <img src="/img/posts/inspector-scriptable.png" title="output" style="max-height:412px;max-width:412px;">
 
 <br>
 <br>
-  **Also, If you are interested, feel free to checkout the play list with all the video-logs of my engine update that I put on YouTube!**
+  **Also, if you are interested, feel free to checkout my YouTube playlist with all the video-logs of my engine's update here:**
   <iframe width="100%" height="312px" src="https://www.youtube.com/embed/videoseries?list=PL7kD7ACAKlr9gos6Z2iEE2SDh2HoYlQqB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
