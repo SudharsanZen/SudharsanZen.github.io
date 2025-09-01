@@ -1,5 +1,5 @@
   {% if post.featured_image %}
-  <img class="img-responsive" src="{{ post.featured_image }}" title="{{ post.title }}">
+  <img class="img-responsive" display="block" src="{{ post.featured_image }}" title="{{ post.title }}" style="max-width:100%; height:auto; display:block;">
   {% endif %}
 
   {%if post.featured_video%}
