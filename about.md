@@ -7,11 +7,11 @@ permalink: /about/
 
 Hi there! Welcome to my page!
 <br><br>
-My name is Sudharsan, I am a 4th year CSE Undergrad Student from India.<br>
-As you might’ve noticed, I am a HUGE game development enthusiast and I love every aspect of game development (and I mean it!).
+My name is Sudharsan, I am a programmer from India!<br>
+As you might’ve noticed, I am a HUGE game development enthusiast and I love every aspect of game development!
 <br><br>
 I've tried to acquire as many skills as I could since I was an itty-bitty little boy. The progress was slow, but my desire to know how everything works kept me going.
-Over the years, I’ve delved into various aspects of Game Dev, both the artist’s side and the programmer’s side. I spent so much time learning each of the many skills that are required to make a game and tried to master everything (which is not a good idea, had to learn it the hard way). The more I learned, the more I found what I truly wanted to do. I wanted to make my own game engine! This introduced me to the world of graphics programming and I’ve never loved anything more.
+Over the years, I’ve delved into various aspects of Game Dev, both the artist’s side and the programmer’s side. I spent so much time learning each of the many skills that are required to make a game and tried to master everything (which is not a good idea, had to learn it the hard way). The more I learned, the more I found what I truly wanted to do. I wanted to make my own game engine! This introduced me to the world of graphics programming and I’ve never loved anything more. Visualizing stuff makes my brain tingle!
 <br><br>
 I have a <a class="link-class" href="https://www.youtube.com/channel/UCaKav0cMu-KH3slylWL1Mdw"><em class="link">YouTube</em></a> channel where I upload my Engine’s updates and occasionally some Unity tutorials. Feel free to check it out <a class="link-class" href="https://www.youtube.com/channel/UCaKav0cMu-KH3slylWL1Mdw">here</a>.
 <br><br>
